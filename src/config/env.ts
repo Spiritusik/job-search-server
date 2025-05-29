@@ -17,7 +17,7 @@ if (!isNumberString(JWT_ACCESS_EXPIRES_IN) || !isNumberString(JWT_REFRESH_EXPIRE
 }
 
 export const env = {
-  PORT: getEnv("PORT"),
+  PORT: process.env.PORT,
   CLIENT_URL: getEnv("CLIENT_URL"),
   MONGGO_DB_ACCESS_LOGIN: getEnv("MONGGO_DB_ACCESS_LOGIN"),
   MONGGO_DB_ACCESS_PASSWORD: getEnv("MONGGO_DB_ACCESS_PASSWORD"),
