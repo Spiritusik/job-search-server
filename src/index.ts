@@ -9,7 +9,7 @@ import { env } from "@/config/env";
 
 const DB_URL = `mongodb+srv://${env.MONGGO_DB_ACCESS_LOGIN}:${env.MONGGO_DB_ACCESS_PASSWORD}@job-search.gdztwpq.mongodb.net/?retryWrites=true&w=majority&appName=job-search`
 
-const PORT = env.PORT || 5000;
+const PORT = env.PORT || 4000;
 const app = express();
 
 app.use(express.json());
