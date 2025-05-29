@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import ApiError from "@/errors/ApiError";
-import { tokenService } from "@/services/tokenService";
-import { JwtPayload } from "@/types/jwtPayload";
+import ApiError from "../errors/ApiError";
+import { tokenService } from "../services/tokenService";
+import { JwtPayload } from "../types/jwtPayload";
 
 interface AuthRequest extends Request {
   user?: JwtPayload;
@@ -32,7 +32,7 @@ export function checkRolesMiddleware(accessRoles: string | string[]) {
       }
 
       if (Array.isArray(accessRoles)) {
-        return userRoles.some(role => accessRoles.includes(role))
+        return userRoles.some((role: string) => accessRoles.includes(role))
           ? next()
           : next(ApiError.forbidden());
       }

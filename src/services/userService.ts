@@ -1,8 +1,8 @@
-import { User } from "@/models";
+import { User } from "../models";
 import bcrypt from "bcrypt";
-import ApiError from "@/errors/ApiError";
-import { getPayload } from "@/dtos/user.dto";
-import { JwtPayload } from "@/types/jwtPayload";
+import ApiError from "../errors/ApiError";
+import { getPayload } from "../dtos/user.dto";
+import { JwtPayload } from "../types/jwtPayload";
 import { tokenService } from "./tokenService";
 import mongoose, { Types } from "mongoose";
 

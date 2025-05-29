@@ -1,6 +1,6 @@
-import { env } from "@/config/env";
-import { Token } from "@/models";
-import { JwtPayload } from "@/types/jwtPayload";
+import { env } from "../config/env";
+import { Token } from "../models";
+import { JwtPayload } from "../types/jwtPayload";
 import jwt from "jsonwebtoken";
 import { Types } from "mongoose";
 

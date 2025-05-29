@@ -2,9 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import router from "@/routes"
-import errorMiddleware from "@/middlewares/ErrorHandlingMiddleware";
-import { env } from "@/config/env";
+import router from "./routes"
+import errorMiddleware from "./middlewares/ErrorHandlingMiddleware";
+import { env } from "./config/env";
 
 
 const DB_URL = `mongodb+srv://${env.MONGGO_DB_ACCESS_LOGIN}:${env.MONGGO_DB_ACCESS_PASSWORD}@job-search.gdztwpq.mongodb.net/?retryWrites=true&w=majority&appName=job-search`

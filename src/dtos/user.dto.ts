@@ -1,4 +1,4 @@
-import { JwtPayload } from "@/types/jwtPayload";
+import { JwtPayload } from "../types/jwtPayload";
 import { Types } from "mongoose";
 
 export function getPayload(user: { _id: Types.ObjectId; email: string; role: string[] }): JwtPayload {

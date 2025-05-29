@@ -1,5 +1,5 @@
 import { config } from "dotenv";
-import { isNumberString } from "@/utils/typeGuards";
+import { isNumberString } from "../utils/typeGuards";
 
 config();
 

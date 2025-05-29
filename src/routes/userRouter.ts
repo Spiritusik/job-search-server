@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body } from "express-validator";
-import { userController } from "@/controllers/userController";
-import { authMiddleware } from "@/middlewares/authMiddleware";
-import { checkRolesMiddleware } from "@/middlewares/checkRolesMiddleware";
+import { userController } from "../controllers/userController";
+import { authMiddleware } from "../middlewares/authMiddleware";
+import { checkRolesMiddleware } from "../middlewares/checkRolesMiddleware";
 
 const router = Router();
 

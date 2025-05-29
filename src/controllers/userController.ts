@@ -1,11 +1,9 @@
-// controllers/user.controller.ts
-
 import { Request, Response, NextFunction } from "express";
 import { validationResult } from "express-validator";
-import { JwtPayload } from "@/types/jwtPayload";
-import { env } from "@/config/env";
-import { userService } from "@/services/userService";
-import ApiError from "@/errors/ApiError";
+import { JwtPayload } from "../types/jwtPayload";
+import { env } from "../config/env";
+import { userService } from "../services/userService";
+import ApiError from "../errors/ApiError";
 
 interface AuthRequest extends Request {
   user?: JwtPayload;

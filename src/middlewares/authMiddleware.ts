@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import ApiError from "@/errors/ApiError";
-import { tokenService } from "@/services/tokenService";
-import { JwtPayload } from "@/types/jwtPayload";
+import ApiError from "../errors/ApiError";
+import { tokenService } from "../services/tokenService";
+import { JwtPayload } from "../types/jwtPayload";
 
 interface AuthenticatedRequest extends Request {
     user?: JwtPayload;
